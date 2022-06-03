@@ -9,14 +9,7 @@ sections:
   label: Pages
   create: documents
   match: "*.md"
-  new_doc_ext: ".md"
-  templates:
-  - page
-- type: directory
-  path: docs
-  label: Docs
-  create: documents
-  match: "*.md"
+  new_doc_ext: md
   templates:
   - page
 - type: directory
@@ -24,6 +17,13 @@ sections:
   label: Blog
   create: documents
   match: "*.md"
+- type: directory
+  path: docs
+  label: Docs
+  create: documents
+  match: "*.md"
+  templates:
+  - page
 - type: document
   path: sidebars.json
   label: Sidebar
